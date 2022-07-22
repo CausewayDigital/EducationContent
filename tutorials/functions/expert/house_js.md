@@ -41,7 +41,7 @@ function walls () {
             agent.turn(RIGHT_TURN) 
         } 
     } 
-}) 
+} 
 ```
 
 ## Step 5
@@ -60,7 +60,7 @@ function walls () {
             agent.turn(RIGHT_TURN) 
         } 
     } 
-}) 
+} 
 ```
 
 ## Step 6
@@ -79,7 +79,7 @@ Code the agent to ``||agent:set block or item||``, set it to **brick slab**, set
 function roof () {
     agent.setItem(BRICKS_SLAB, 64, 1) 
     agent.move(UP, 1) 
-}) 
+} 
 ```
 
 ## Step 8
@@ -93,7 +93,7 @@ function roof () {
         agent.move(BACK, 4) 
         agent.move(RIGHT, 1) 
     } 
-}) 
+}
 ```
 
 ## Step 9
@@ -111,7 +111,7 @@ function roof () {
         agent.move(BACK, 4) 
         agent.move(RIGHT, 1) 
     } 
-}) 
+}
 ```
 
 ## Step 10
@@ -121,7 +121,7 @@ Code an ``||player:on chat||`` command and name it **house**, and have it call b
 player.onChat("house", function () {
     walls()
     roof()
-})
+}
 ```
 
 
@@ -157,6 +157,5 @@ function roof () {
 player.onChat("house", function () {
     walls()
     roof()
-})
+}
 ```
-
