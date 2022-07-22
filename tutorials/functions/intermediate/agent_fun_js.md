@@ -33,7 +33,7 @@ Rename the given **carrot** ``||player:on chat||`` command to **torches**.  Modi
 
 ```javascript
 player.onChat("torches", function () {
-    agent.setItem(TORCHES, 32, 1)
+    agent.setItem(TORCH, 32, 1)
 })
 ```
 
@@ -45,7 +45,7 @@ Modify the existing ``||loops:for||`` loops to complete 12 planting cycles.
 
 ```javascript
 player.onChat("torches", function () {
-    agent.setItem(TORCHES, 32, 1)
+    agent.setItem(TORCH, 32, 1)
     for (let index = 0; index < 4; index++) {
         for (let index = 0; index < 3; index++) {
         	
