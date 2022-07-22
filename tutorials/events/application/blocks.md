@@ -32,4 +32,7 @@ player.onTravelled(WALK, function () {
         )
     }
 })
+player.onItemInteracted(FISHING_ROD, function () {
+	
+})
 ```
