@@ -91,9 +91,8 @@ player.onChat("fd", function () {
 })
 player.onChat("tp", function () {
     agent.teleportToPlayer()
+})
 player.onChat("rt", function () { 
     agent.turn(RIGHT_TURN) 
-
 })
 ```
-
