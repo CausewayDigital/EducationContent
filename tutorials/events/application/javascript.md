@@ -8,3 +8,9 @@ player.onTravelled(WALK, function () {
     mobs.spawn(PRIMED_TNT, pos(0, 0, 0))
     })
 ```
+
+```ghost
+player.onItemInteracted(FISHING_ROD, function () {
+	
+})
+```
