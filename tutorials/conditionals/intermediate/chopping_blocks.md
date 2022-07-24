@@ -54,9 +54,11 @@ player.onChat("chop", function () {
 Get a ``||variable: change variable||``, set it to the value of **height plus 1**. Drag the **height** variable into the ``||loops: while||`` loop.
 
 ```blocks
+player.onChat("chop", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
         height += 1
     }
+}
 ```
 
 ## Step 7
@@ -121,6 +123,17 @@ player.onChat("chop", function () {
 Get a ``||agent:collect all||`` block and drag it into the  ``||loops:repeat||`` loop under the ``||agent:agent destroy forward||``.
 
 ```blocks
+let height = 0
+player.onChat("chop", function () {
+    height = 0
+    while (agent.detect(AgentDetection.Block, FORWARD)) {
+        height += 1
+        agent.destroy(UP)
+        agent.move(UP, 1)
+    }
+    for (let index = 0; index < height; index++) {
+        agent.move(DOWN, 1)
+        agent.destroy(FORWARD)
     }
     agent.collectAll()
 })
