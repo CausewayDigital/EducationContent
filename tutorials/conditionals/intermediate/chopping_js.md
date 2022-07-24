@@ -62,9 +62,12 @@ player.onChat("chop", function () {
 Add to the ``||loops:while||`` loop to change the **height** ``||variable: variable||`` to the value of **height plus 1**.
 
 ```javascript
+player.onChat("chop", function () {
+    height = 0
     while (agent.detect(AgentDetection.Block, FORWARD)) {
         height += 1
     }
+}
 ```
 
 ## Step 7
@@ -105,9 +108,11 @@ for (let index = 0; index < height; index++) {
 After the ``||loops:for||`` loop, code the agent to ``||agent:collect all||`` .
 
 ```javascript
-    }
-    agent.collectAll()
-})
+for (let index = 0; index < height; index++) {
+    agent.move(DOWN, 1)
+    agent.destroy(FORWARD)
+}
+agent.collectAll()
 ```
 
 ## Step 11
